@@ -2,6 +2,10 @@
 
 Za úkol máš vytvořit stránku, která bude zobrazovat nabídku filmů v místním kině.
 
+Já jsem si úkol sám vypracoval a moje řešení nakonec vypadá nějak takto. Můžeš to použít jako inspiraci, ale je zcela na tobě, jak si svoji stránku nastyluješ.
+
+![Ukázka možného výsledku](ukazka-vysledku.jpg)
+
 
 ## Fork zadání na GitHubu
 
@@ -32,7 +36,7 @@ Pokud nevíš, jak s Gitem a GitHubem pracovat, zeptej se nás na Slacku nebo se
 	npm install
 	```
 
-	Tím se ti do projektu doinstalují všechny potřebné závislosti stejně, jako kdybys projekt vytvářela/instalovala pomocí `create-czechitas-app`.
+	Tím se ti do projektu doinstalují všechny potřebné balíčky závislostí stejně, jako kdybys projekt vytvářela/instalovala pomocí `create-czechitas-app`.
 
 4. Známým způsobem zkus projekt spustit. Měla bys vidět stránku, na které je ikonka kamery a text *V našem kině právě uvádíme*.
 
@@ -145,8 +149,7 @@ Tvým cílem je vytvořit stránku, která bude zobrazovat přehled filmů, kter
 
 	Jako `key` pro položky v seznamu můžeš použít jméno herce.
 
-12. Nebojíš-li se CSS, všechny komponenty nastyluj tak, aby stránka hezky vypadala.
+12. Nebojíš-li se CSS, všechny komponenty nastyluj tak, aby stránka hezky vypadala. Třeba jako na obrázku na začátku tohoto návodu.
 
 13. Nezapomeň udělat `git commit` a potom `push` do GitHub repozitáře. Odkaz na repozitář odevzdej jako řešení úkolu.
 
-Já jsem se pokusil úkol sám vypracovat a moje řešení nakonec vypadá nějak takto. Můžeš to použít jako inspiraci, ale je zcela na tobě, jak si svoji stránku nastyluješ.
