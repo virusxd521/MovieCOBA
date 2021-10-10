@@ -1,0 +1,11 @@
+.actor-box{
+    display: inline-block;
+    width: 50%;
+}
+
+.actor-box p{
+    padding: 0;
+    margin: 0px 5px 5px 0px;
+    font-size: 13px;
+    line-break: revert;
+}

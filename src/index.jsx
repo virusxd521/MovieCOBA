@@ -1,15 +1,18 @@
 import React from 'react';
 import { render } from 'react-dom';
+import Header from './components/header/index';
+import MovieList from './components/movieList/index'
+
 import './style.css';
 
-import camera from './img/camera.svg';
+import movieList from './movies.js';
+
+
 
 const App = () => (
   <>
-    <h1>
-      <img class="logo" src={camera} alt="Logo" />
-      V našem kině právě uvádíme
-    </h1>
+    <Header/>
+    <MovieList movies={movieList}/>
   </>
 );
 

@@ -1,0 +1,46 @@
+.movie-box{
+    width: 32.8%;
+    height: 320px;
+    background-color: ghostwhite;
+    margin: 0.25%;
+    display: inline-block;
+    text-align: left;
+}
+.col-2{
+    width: 40%;
+    display: inline-block;
+}
+.col-6{
+    width:60%;
+}
+    .col-2 img{
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+.right{
+    float: right;
+}
+.movie-title{
+    color:goldenrod;
+}
+h4.movie-title{
+    margin-bottom: 0;
+}
+.movie-propertiies{
+    line-height: 8px;
+    font-size: 14px;
+}
+.movie-cast{
+
+}
+.movie-cast-box{
+    margin: 0 auto;
+}
+.movie-rating{
+    background-color:goldenrod;
+    text-align: center;
+    width: 150px;
+    transform: translate(-15%, 100%) rotate(-35deg);
+    clip-path: polygon(10% 0%, 80% 0, 100% 100%, 0% 100%);
+}
