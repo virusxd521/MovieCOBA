@@ -1,28 +1,33 @@
 .movie-box{
-    width: 32.8%;
-    height: 320px;
+    width: 15.0%;
+    height: 340px;
     background-color: ghostwhite;
     margin: 0.25%;
-    display: inline-block;
+    display: block;
     text-align: left;
+    float: left;
+    position: relative;
 }
 .col-2{
-    width: 40%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     display: inline-block;
 }
 .col-6{
-    width:60%;
+    display: inline-block;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
 }
     .col-2 img{
         width: 100%;
         padding-left: 10%;
         padding-right: 10%;
     }
-.right{
-    float: right;
-}
 .movie-title{
     color:goldenrod;
+    font-size: 14px;
 }
 h4.movie-title{
     margin-bottom: 0;
@@ -31,16 +36,8 @@ h4.movie-title{
     line-height: 8px;
     font-size: 14px;
 }
-.movie-cast{
-
-}
-.movie-cast-box{
-    margin: 0 auto;
-}
-.movie-rating{
-    background-color:goldenrod;
-    text-align: center;
-    width: 150px;
-    transform: translate(-15%, 100%) rotate(-35deg);
-    clip-path: polygon(10% 0%, 80% 0, 100% 100%, 0% 100%);
+.movie-button{
+    position: absolute;
+    right: 0px;
+    top: 0px;
 }

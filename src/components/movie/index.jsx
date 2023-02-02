@@ -1,31 +1,35 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './style.css';
-import Actor from '../actor/index';
+import Check from '../check/index'
+import { useMovieCart } from '../../context';
 
-const Movie = ({id, title, poster, year, rating, director, genre, cast}) => {
+const Movie = ({id, title, posterURL, genre}) => {
+    const {cart,setCart} = useMovieCart();
+    const [isSelect, setIsSelected] = useState(false);
+
+    const handleOnCheck = () =>{
+        setIsSelected(!isSelect);
+
+        setCart({
+            id: id,
+            isSelect:!isSelect,
+            title:title,
+            genre:genre,
+            posterURL:posterURL
+        });
+    }
 
     return (
         <div id={'movie_'+id} className="movie-box">
             <div className="col-2">
-                <div className="movie-rating"><b>{rating+"/10"}</b></div>
-                <img alt={title} src={'./assets/'+poster}/>
+                <img alt={title} src={posterURL}/>                 
             </div>
-            <div className="col-6 right">
-                <h3 className="movie-title">{title}</h3>
-                <div className="movie-propertiies">
-                    <p><b>Rok vydaní: </b>{year}</p>
-                    <p><b>Žánr: </b>{genre}</p>
-                    <p><b>Režie: </b>{director}</p>
-                </div>
-                <div className="movie-cast">
-                    <h4 className="movie-title">V hlavních rolích:</h4>
-                    <div className="movie-cast-box">
-                        {
-                            cast.map((actor)=><Actor key={actor.name} {...actor}/>)
-                        }
-                    </div>
-                </div>               
-            </div>           
+            <div className="col-6">
+                <label className="movie-title">{title}</label>                         
+            </div>  
+            <div className='movie-button'>
+                <Check checked={isSelect} onCheck={handleOnCheck}/> 
+            </div>          
         </div>
     );
 };

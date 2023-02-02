@@ -2,12 +2,18 @@ import React from 'react';
 import './style.css';
 
 import camera from './camera.svg';
+import Cart from '../cart/inddex';
+import { useMovieCart } from '../../context';
 
-const Header = () => (
-      <h1 className="header">
-        <img className="logo" src={camera} alt="Logo" />
-        V našem kině právě uvádíme
-      </h1>
-);
+const Header = ({count}) => {
+      return(<div>
+          <h1 className="header">
+            <img className="logo" src={camera} alt="Logo" />
+            Movies for renting
+          </h1>
+          <Cart count={count}/>
+      </div>
+      );
+};
 
 export default Header;
