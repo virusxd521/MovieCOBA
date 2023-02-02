@@ -1,6 +1,10 @@
-h1.header{
+.header{
+  position: relative;
+    display: flex;
+}
+h1.header--title{
   text-align: center;
-  width: 100%;
+  width: 90%;
 }
 .logo {
     display: inline-block;
