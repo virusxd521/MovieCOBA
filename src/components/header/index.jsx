@@ -6,10 +6,11 @@ import Cart from '../cart/inddex';
 import { useMovieCart } from '../../context';
 
 const Header = ({count}) => {
-      return(<div>
-          <h1 className="header">
+      return(
+      <div className="header">
+          <h1 className="header--title">
             <img className="logo" src={camera} alt="Logo" />
-            Movies for renting
+            Movie renting
           </h1>
           <Cart count={count}/>
       </div>

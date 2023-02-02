@@ -4,8 +4,8 @@ import {getMovieList} from '../../movies.js';
 import Movie from '../movie/index';
 
 const MovieList=({genre})=>{
-    const [movies, setMovies] = useState(null);
-
+    const [movies, setMovies] = useState([]);
+console.log(genre);
     useEffect(()=>{
         getMovieList(genre, setMovies);
     },[genre]);

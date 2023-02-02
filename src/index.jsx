@@ -12,7 +12,7 @@ import './style.css';
 
 const App = () => {
   const [movieCart, setMovieCart] = useState([]);
-  const [activeTab, setActiveTab] = useState(2);
+  const [activeTab, setActiveTab] = useState(1);
 
   const handleTabChange = (id) =>{
     setActiveTab(id);
@@ -34,9 +34,9 @@ const App = () => {
       <Header count={movieCart?movieCart.length:0}/>
       <BrowserRouter>
         <Menu tabList={tabList} activeTab={activeTab} onTabChange={handleTabChange}/>
-        <Routes>
+        <Routes>        
           {
-            tabList.map(({tabName, id}) =><Route key={"link_"+id} path={'/'+tabName} element={<MovieList genre={tabName} />}/>)
+            tabList.map(({tabName, id}) =><Route key={"link_"+id} path={id==1?"/":'/'+tabName} element={<MovieList genre={tabName} />}/>)
           }
         </Routes>
       </BrowserRouter>

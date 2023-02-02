@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
+import './style.css';
 
 const Cart = ({count}) => {
 
   return (
-    <p>count: {count}</p>
+    <p className="cart">Movies' counter: {count}</p>
   )
 };
 
