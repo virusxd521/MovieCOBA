@@ -1,4 +1,9 @@
-const genres = [
+interface Genre {
+  id : number;
+  tabName: string;
+}
+
+const genres : Genre[] = [
 	{
 		id: 1,
 		tabName: 'animation',
