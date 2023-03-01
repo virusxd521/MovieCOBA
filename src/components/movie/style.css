@@ -1,0 +1,43 @@
+.movie-box{
+    width: 15.0%;
+    height: 340px;
+    background-color: ghostwhite;
+    margin: 0.25%;
+    display: block;
+    text-align: left;
+    float: left;
+    position: relative;
+}
+.col-2{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: inline-block;
+}
+.col-6{
+    display: inline-block;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+    .col-2 img{
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+.movie-title{
+    color:goldenrod;
+    font-size: 14px;
+}
+h4.movie-title{
+    margin-bottom: 0;
+}
+.movie-propertiies{
+    line-height: 8px;
+    font-size: 14px;
+}
+.movie-button{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
