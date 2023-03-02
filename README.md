@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # MoviesCOBA
 
 
@@ -92,10 +93,15 @@ For open source projects, say how it is licensed.
 ## Project status
 If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
 =======
+=======
+>>>>>>> 48ddfdf (Finished the assignment)
 # Movies
 
 API: https://sampleapis.com/api-list/movies
 
 ![image](https://user-images.githubusercontent.com/92257175/216260526-b83dab7e-04d6-419a-ba65-64c3d48c53e9.png)
 
+<<<<<<< HEAD
 >>>>>>> feature/Finished-product
+=======
+>>>>>>> 48ddfdf (Finished the assignment)
